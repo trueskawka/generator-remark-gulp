@@ -24,7 +24,11 @@ module.exports = class extends yeoman {
     
     this.fs.copyTpl(
       this.templatePath('slide.md'),
-      this.destinationPath('src/slides/' + n_slides + "-" + this.props.slide_name),
+      this.destinationPath('src/slides/' 
+                           + n_slides 
+                           + "-" 
+                           + this.props.slide_name 
+                           + '.md'),
       { slide_name : this.props.slide_name }
     )
   }
