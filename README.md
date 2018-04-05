@@ -6,19 +6,24 @@ It allows for creating a simple scaffold, where each slide is a separate Markdow
 
 ### How to install
 #### Prerequisites
-1. Install [npm](https://www.npmjs.com/get-npm)
-2. Install [Yeoman](http://yeoman.io/learning/index.html)
-3. Install this package from `npm` 
+1. [npm](https://www.npmjs.com/get-npm)
+2. [Yeoman](http://yeoman.io/learning/)
 
-    ```
-    npm install -g generator-remark-gulp
-    ```
+#### Package
+Install this package from `npm` 
+
+```
+npm install -g generator-remark-gulp
+```
 
 #### Creating a new presentation
-1. Create a new folder for your presentation outside of the generator directory and `cd` into it 
+1. Create a new folder for your presentation outside of the generator directory 
+  and `cd` into it 
 2. Run `yo remark-gulp` and answer a few questions - the files will be generated
-3. Run `npm install` (or `yarn install`)
-4. Run `gulp` and go to `localhost:8000`
+3. Run `npm install` (or `yarn install`) 
+4. Run `gulp` - - if you haven't installed `gulp` before and don't want to 
+  install it globally, run `npm link gulp`
+5. Go to `localhost:8000`
 
 ### How to use
 When you run `gulp`, the presentation files will be generated in the 
