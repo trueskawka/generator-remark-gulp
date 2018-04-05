@@ -25,7 +25,7 @@ It allows for creating a simple scaffold, where each slide is a separate Markdow
 
 When you run `gulp`, the presentation files will be generated in the 
 `presentation` directory. Every time you add or edit a slide, it will
-update the file, so just reload it in the broswer. When you're happy with
+update the file, so just reload it in the browser. When you're happy with
 your presentation, copy all the files in the `presentation` directory and
 use `index.html` as your main presentation file (or keep using `gulp`, or 
 serve it from your server etc.).
@@ -33,20 +33,22 @@ serve it from your server etc.).
 ####  Add new slides 
 
 1. Use the generator
-  Running
+  
+    Running
 
-  ```
-  yo remark-gulp:slide
-  ```
+    ```
+    yo remark-gulp:slide
+    ```
 
-  will prompt you for the new slide name and create a new `<no>-<slide_name>`
-  file in the `src/slides` directory. The `<no>` will automatically 
-  increment, depending on the number of slides already present in the directory.
+    will prompt you for the new slide name and create a new `<no>-<slide_name>`
+    file in the `src/slides` directory. The `<no>` will automatically 
+    increment, depending on the number of slides already present in the directory.
   
 2. Manually add a slide
-  Create a new `.md` file to the `src/slides` directory. As the slides are 
-  added to the presentation in order, it's best to give them sensible names, 
-  e.g. `01-title.md`, `02-agenda.md`.
+
+    Create a new `.md` file to the `src/slides` directory. As the slides are 
+    added to the presentation in order, it's best to give them sensible names, 
+    e.g. `01-title.md`, `02-agenda.md`.
 
 #### Add new CSS styles
 Either edit the `src/sass/main.scss` directly or:
@@ -57,7 +59,7 @@ Either edit the `src/sass/main.scss` directly or:
 
 ### Notes
 
-1. I mainly created this scaffold to easily generate presentations for    
+1. I mainly created this scaffold to easily generate presentations for
   myself. I prefer to have the slides in separate files, but you could just 
   write everything in one big `.md` file and put it in the `src/slides` 
   folder. 
