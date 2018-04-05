@@ -1,28 +1,23 @@
 ## Remark.js generator with Gulp and Nunjucks
-
 This is a simple Yeoman generator for [remark](https://remarkjs.com/) -
 a web-based presentation tool.
 
 It allows for creating a simple scaffold, where each slide is a separate Markdown file.
 
 ### How to install
-
 #### Prerequisites
-
 1. Install [npm](https://www.npmjs.com/get-npm)
 2. Install [Yeoman](http://yeoman.io/learning/index.html)
 3. Clone this repository and `cd` into it, then run `npm install`
 4. Run `npm link` to use the generator locally
 
 #### Creating a new presentation
-
 1. Create a new folder for your presentation outside of the generator directory and `cd` into it 
 2. Run `yo remark-gulp` and answer a few questions - the files will be generated
 3. Run `npm install` (or `yarn install`)
 4. Run `gulp` and go to `localhost:8000`
 
 ### How to use
-
 When you run `gulp`, the presentation files will be generated in the 
 `presentation` directory. Every time you add or edit a slide, it will
 update the file, so just reload it in the browser. When you're happy with
@@ -31,7 +26,6 @@ use `index.html` as your main presentation file (or keep using `gulp`, or
 serve it from your server etc.).
 
 ####  Add new slides 
-
 1. Use the generator
   
     Running
@@ -51,7 +45,6 @@ serve it from your server etc.).
     e.g. `01-title.md`, `02-agenda.md`.
 
 #### Add new CSS styles
-
 You can edit `src/sass/main.scss` directly. If you want to add a new file, you can:
 
 1. Use the generator
@@ -79,7 +72,6 @@ You can edit `src/sass/main.scss` directly. If you want to add a new file, you c
     slide `.md` file
 
 ### Notes
-
 1. I mainly created this scaffold to easily generate presentations for
   myself. I prefer to have the slides in separate files, but you could just 
   write everything in one big `.md` file and put it in the `src/slides` 
@@ -126,6 +118,4 @@ You can edit `src/sass/main.scss` directly. If you want to add a new file, you c
     ```
 
 ### To-do
-
-1. Adding the generator to offical Yeoman generators
-2. Automatically updating with the latest version of Remark.js
+1. Automatically updating with the latest version of Remark.js

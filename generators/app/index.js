@@ -37,10 +37,11 @@ module.exports = class extends yeoman {
       this.destinationPath('src/sass/')
     );
 
-    // copy /slides
-    this.fs.copy(
-      this.templatePath('src/slides/*'),
-      this.destinationPath('src/slides/')
+    // copy title slide
+    this.fs.copyTpl(
+      this.templatePath('src/slides/00-title.md'),
+      this.destinationPath('src/slides/00-title.md'),
+      { title : this.props.title }
     )
 
     // copy index.nunjucks

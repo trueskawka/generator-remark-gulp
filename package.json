@@ -1,6 +1,6 @@
 {
   "name": "generator-remark-gulp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Yeoman generator for creating Remark presentations with Gulp and Nunjucks",
   "files": [
     "generators"
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/trueskawka/generator-remark-gulp#readme",
   "dependencies": {
+    "fs": "0.0.1-security",
     "yeoman-generator": "^1.1.1"
   }
 }
