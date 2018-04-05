@@ -13,13 +13,15 @@ module.exports = class extends yeoman {
       type    : 'input',
       name    : 'title',
       message : 'Your presentation title',
-      default : 'My awesome presentation is awesome'
+      default : 'My awesome presentation'
     }, {
       type    : 'input',
       name    : 'author',
       message : 'Author name',
       default : 'Awesome author'
-    }]);
+    }]).then((answers) => {
+      this.props = answers;
+    });
   }
 
   writing() {
