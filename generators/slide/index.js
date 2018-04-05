@@ -19,7 +19,7 @@ module.exports = class extends yeoman {
     var n_slides = fs.readdirSync("./src/slides").length;
 
     if (n_slides <= 9) {
-      var n_slides = "0" + n_slides;
+      n_slides = "0" + n_slides;
     } 
     
     this.fs.copyTpl(

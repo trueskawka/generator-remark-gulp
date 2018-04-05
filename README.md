@@ -40,7 +40,7 @@ serve it from your server etc.).
     yo remark-gulp:slide
     ```
 
-    will prompt you for the new slide name and create a new `<no>-<slide_name>`
+    will prompt you for the new slide name and create a new `<no>-<slide_name>.md`
     file in the `src/slides` directory. The `<no>` will automatically 
     increment, depending on the number of slides already present in the directory.
   
@@ -51,11 +51,32 @@ serve it from your server etc.).
     e.g. `01-title.md`, `02-agenda.md`.
 
 #### Add new CSS styles
-Either edit the `src/sass/main.scss` directly or:
-- add a partial file `src/sass/_<name>.scss` (mind the underscore) and 
-  include it in your `main.scss`
-- add a new `src/sass/<name>.scss` file and then include it in the relevant
-  slide `.md` file
+
+You can edit `src/sass/main.scss` directly. If you want to add a new file, you can:
+
+1. Use the generator
+  
+    Running
+
+    ```
+    yo remark-gulp:style
+    ```
+
+    will prompt you for the new style name and create a new file in `src/sass` 
+    directory. If you don't provide a name, it will be named `<no>-style.scss`.
+    The `<no>` will automatically increment, depending on the number of styles already 
+    present in the directory.
+
+    If you want to add a partial style, add `--partial` flag to the command. It
+    will create a new `_<style-name>.scss` file and append an `@import` to the
+    `main.scss`.
+
+2. Manually add a CSS file
+
+  - add a partial file `src/sass/_<name>.scss` (mind the underscore) and 
+    include it in your `main.scss`
+  - add a new `src/sass/<name>.scss` file and then include it in the relevant
+    slide `.md` file
 
 ### Notes
 
@@ -106,6 +127,5 @@ Either edit the `src/sass/main.scss` directly or:
 
 ### To-do
 
-1. Generator for a new `.sass` file
-2. Adding the generator to offical Yeoman generators
-3. Automatically updating with the latest version of Remark.js
+1. Adding the generator to offical Yeoman generators
+2. Automatically updating with the latest version of Remark.js
