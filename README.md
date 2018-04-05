@@ -31,9 +31,22 @@ use `index.html` as your main presentation file (or keep using `gulp`, or
 serve it from your server etc.).
 
 ####  Add new slides 
-Create a new `.md` file to the `src/slides` directory. As the slides are 
-added to the presentation in order, it's best to give them sensible names, 
-e.g. `01-title.md`, `02-agenda.md`.
+
+1. Use the generator
+  Running
+
+  ```
+  yo remark-gulp:slide
+  ```
+
+  will prompt you for the new slide name and create a new `<no>-<slide_name>`
+  file in the `src/slides` directory. The `<no>` will automatically 
+  increment, depending on the number of slides already present in the directory.
+  
+2. Manually add a slide
+  Create a new `.md` file to the `src/slides` directory. As the slides are 
+  added to the presentation in order, it's best to give them sensible names, 
+  e.g. `01-title.md`, `02-agenda.md`.
 
 #### Add new CSS styles
 Either edit the `src/sass/main.scss` directly or:
@@ -91,7 +104,6 @@ Either edit the `src/sass/main.scss` directly or:
 
 ### To-do
 
-1. Generator for a new slide
-2. Generator for a new `.sass` file
-3. Adding the generator to offical Yeoman generators
-4. Automatically updating with the latest version of Remark.js
+1. Generator for a new `.sass` file
+2. Adding the generator to offical Yeoman generators
+3. Automatically updating with the latest version of Remark.js
